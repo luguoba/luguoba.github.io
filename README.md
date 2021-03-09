@@ -5,6 +5,6 @@
 
 >异世相遇， 尽享美味~~
 
-[![Github stats]
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=luguoba&layout=compact)](https://github.com/luguoba/github-readme-stats)
-![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=luguoba&repo=luguoba.github.io)
+[![Github stats](https://github-readme-stats.vercel.app/api?username=luguoba&show_icons=true&include_all_commits=true)]
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=luguoba&layout=compact)]
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=luguoba&repo=luguoba.github.io)]
