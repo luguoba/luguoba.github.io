@@ -1,4 +1,6 @@
-# This is my simple html 
+## This is my simple html 
+
+---
 
 ```c
 #include <stdio.h>
