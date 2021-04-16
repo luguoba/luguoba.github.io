@@ -23,9 +23,3 @@ footer {
 section {
     background-color: lightgrey;
 }
-
-article {
-    > * {
-    text-align: center;
-    }
-}
