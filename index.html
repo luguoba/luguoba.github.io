@@ -7,9 +7,27 @@
     <title>BLOG</title>
     <!--IE 呵呵-->
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="github-markdown.css">
     <script src="marked.js">js bad</script>
-    
-    
+    <script>
+        document.getElementById('content').innerHTML = marked('# Marked in the browser\n\nRendered by *marked*.');
+    </script>
+
+<style>
+	.markdown-body {
+		box-sizing: border-box;
+		min-width: 200px;
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 45px;
+	}
+
+	@media (max-width: 767px) {
+		.markdown-body {
+			padding: 15px;
+		}
+	}
+</style>
 </head>
 
 <body>
@@ -20,12 +38,10 @@
     <h3>
         Chapter 1
     </h3>
-    <article>
+    <article class="markdown-body">
         <h2>The First Article</h2>
         <div id="content"></div>
-        <script>
-        document.getElementById('content').innerHTML = marked('# Marked in the browser\n\nRendered by *marked*.');
-        </script>
+        
         <!-- <iframe scr="x.html" frameborder="0"> -->
     </article>
 </section>
