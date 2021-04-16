@@ -7,6 +7,9 @@
     <title>BLOG</title>
     <!--IE 呵呵-->
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="github-markdown.css">
+
+    <script src="marked.js"></script>
 </head>
 
 <body>
@@ -15,19 +18,23 @@
 </header>
 <!--TODO:本地检索 瀑布流加载-->
 <section>
-    <h3>
-        Chapter 1
-    </h3>
-    <article>
+    <h3>Chapter 1</h3>
+    <article style="text-align: center">
         <h2>The First Article</h2>
+        <div id="content" class="markdown-body"></div>
+
+    <script>
+        document.getElementById('content').innerHTML =
+          marked('# Marked in the browser\n\nRendered by *marked*.');
+    </script>
+
         <!--TODO:iframe 汉堡式加载文章-->
-        <object data="">Source Bad</object>
         <!-- <iframe scr="x.html" frameborder="0"> -->
     </article>
 </section>
 
 <footer>
-    <p>• powered by <a href="https://github.com/luguoba/luguoba.github.io" style="color: lightgrey">luguoba</a> •</p>
+    <p style="text-align: center">powered by <a href="https://github.com/luguoba/luguoba.github.io" style="color: lightgrey">luguoba</a></p>
 </footer>
 </body>
 
