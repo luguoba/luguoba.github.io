@@ -8,6 +8,7 @@ footer,
 section,
 article {
     border: 1px solid grey;
+    border-radius: 1px;
     margin: 6px 1px 6px 1px;
     padding: 6px;
     background-color: white;
