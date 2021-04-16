@@ -7,7 +7,7 @@
     <title>BLOG</title>
     <!--IE 呵呵-->
     <link rel="stylesheet" type="text/css" href="main.css">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js">js bad</script>
+    <script src="marked.js">js bad</script>
     
     
 </head>
@@ -23,10 +23,9 @@
     <article>
         <h2>The First Article</h2>
         <div id="content"></div>
-<script>
-      document.getElementById('content').innerHTML =
-      marked('# Marked in the browser\n\nRendered by **marked**.');
-    </script>
+        <script>
+        document.getElementById('content').innerHTML = marked('# Marked in the browser\n\nRendered by **marked**.');
+        </script>
         <!-- <iframe scr="x.html" frameborder="0"> -->
     </article>
 </section>
