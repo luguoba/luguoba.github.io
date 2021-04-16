@@ -27,15 +27,31 @@
     <h3>Chapter 1</h3>
     <article>
         <h2>The First Article</h2>
-        <div id="content" class="markdown-body"></div>
+        <div id="content0" class="markdown-body"></div>
 
     <script>
-        document.getElementById('content').innerHTML =
+        document.getElementById('content0').innerHTML =
           marked('# Marked in the browser\n\nRendered by *marked*.');
     </script>
 
         <!--TODO:iframe 汉堡式加载文章-->
         <!-- <iframe scr="x.html" frameborder="0"> -->
+    </article>
+    <h3>Chapter 2</h3>
+    <article>
+        <h2>The Second Article</h2>
+        <div id="content1" class="markdown-body"></div>
+        <script>
+            document.getElementById('content1').innerHTML =
+                marked('# Marked in the browser\n\nRendered by *marked*.');
+        </script>
+
+        <h2>The Third Article</h2>
+        <div id="content2" class="markdown-body"></div>
+        <script>
+            document.getElementById('content2').innerHTML =
+                marked('# Marked in the browser\n\nRendered by *marked*.');
+        </script>
     </article>
 </section>
 
