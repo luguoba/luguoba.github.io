@@ -24,11 +24,8 @@ section {
     background-color: lightgrey;
 }
 
-h2,
-p {
+article {
+    >* {
     text-align: center;
-}
-
-iframe {
-    border: 0;
+    }
 }
