@@ -9,10 +9,7 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js">js bad</script>
     
-    <script>
-      document.getElementById('content').innerHTML =
-      marked('# Marked in the browser\n\nRendered by **marked**.');
-    </script>
+    
 </head>
 
 <body>
@@ -26,6 +23,10 @@
     <article>
         <h2>The First Article</h2>
         <div id="content"></div>
+<script>
+      document.getElementById('content').innerHTML =
+      marked('# Marked in the browser\n\nRendered by **marked**.');
+    </script>
         <!-- <iframe scr="x.html" frameborder="0"> -->
     </article>
 </section>
