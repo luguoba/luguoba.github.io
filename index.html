@@ -7,6 +7,7 @@
     <title>BLOG</title>
     <!--IE 呵呵-->
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"/>
 </head>
 
 <body>
@@ -27,6 +28,13 @@
 <footer>
     <p>• powered by <a href="https://github.com/luguoba/luguoba.github.io" style="color: lightgrey">luguoba</a> •</p>
 </footer>
+
+<div id="content"></div>
+   <script>
+    document.getElementById('content').innerHTML =
+      marked('# Marked in the browser\n\nRendered by **marked**.');
+  </script>
+
 </body>
 
 </html>
