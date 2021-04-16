@@ -25,7 +25,7 @@ section {
 }
 
 article {
-    >* {
+    > * {
     text-align: center;
     }
 }
