@@ -1,63 +1,21 @@
 <!DOCTYPE html>
-
-
 <html lang="cn">
 <head>
-    <meta charset="utf-8"/>
-    <title>BLOG</title>
-    <!--IE 呵呵-->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/github-markdown.css">
-    <style>
-        article > * {
-                text-align: center;
-            }
-    </style>
+    <title>Luguoba Blog</title>
 
-    <script src="js/marked.js"></script>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
 </head>
-
 <body>
-<header>
-    <h1>Luguoba's Blog</h1>
-</header>
-<!--TODO:本地检索 瀑布流加载-->
-<section>
-    <h3>Chapter 1</h3>
-    <article>
-        <h2>First</h2>
-        <div id="content0" class="markdown-body"></div>
+<div id="app"></div>
 
-    <script>
-        document.getElementById('content0').innerHTML =
-          marked('# Marked in the browser\n\nRendered by *marked*.');
-    </script>
-
-        <!--TODO:iframe 汉堡式加载文章-->
-    </article>
-    <h3>Chapter 2</h3>
-    <article>
-        <h2>Second</h2>
-        <div id="content1" class="markdown-body"></div>
-        <script>
-            document.getElementById('content1').innerHTML =
-                marked('# Marked in the browser\n\nRendered by *marked*.\n\n```public void main```');
-        </script>
-
-        <h2>Third</h2>
-        <div id="content2" class="markdown-body"></div>
-        <script>
-            document.getElementById('content2').innerHTML =
-                marked('# Marked in the browser\n\nRendered by *marked*.');
-        </script>
-    </article>
-
-</section>
-
-<footer>
-    <p style="text-align: center">powered by <a href="https://github.com/luguoba/luguoba.github.io" style="color: lightgrey">luguoba</a></p>
-</footer>
+<script>
+    window.$docsify = {
+        //...
+    }
+</script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
-
 </html>
