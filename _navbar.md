@@ -1,5 +1,4 @@
-* Introduction
-    * [简介](README.md)
+* [Introduction](README.md)
 
 * JavaScript
     * [基础](/javascript/base.md)
