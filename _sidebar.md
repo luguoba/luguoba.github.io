@@ -6,6 +6,6 @@
   * [小笔记](Note/1.md)
 
 * Introduction
-  *  [README](README.MD)
+  *  [README](README.md)
   *  [DOCSIFY](https://docsify.js.org)
     
