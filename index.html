@@ -14,9 +14,9 @@
 <span>更新日期 {docsify-updated}</span>
 <script>
     window.$docsify = {
-        formatUpdated: '{MM}/{DD} {HH}:{mm}',//配置文档更新日期格式
+        formatUpdated: '{YYYY}-{MM}-{DD}',//配置文档更新日期格式
         noEmoji: true,//禁用 emoji 解析
-        //nameLink: '/',//点击文档标题后跳转的链接地址
+        nameLink: '/',//点击文档标题后跳转的链接地址
         notFoundPage: '404.md',//自定义404页面
         repo: 'luguoba/luguoba.github.io',//右上角加载Github Conor插件
         name: 'LUGUOBA BLOG',//侧边栏标题
@@ -39,14 +39,19 @@
             noData: 'NONE',
             depth: 3
         },
-        formatUpdated: function(time) {
-    //return (
+        plugins: [
+          function (hook, vm) {
+            hook.beforeEach(function (html) {
+
+              return (
                 '<span>更新日期 {docsify-updated}</span> ' +
                 '\n' +
                 html
-    return time;
-  }
-    }
+              );
+            });
+          },
+        ],
+    };
 </script>
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 <!--C代码高亮-->
