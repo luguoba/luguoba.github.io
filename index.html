@@ -13,14 +13,16 @@
 <div id="app">正在赶往锅巴的小岛...</div>
 <script>
     window.$docsify = {
+        topMargin: 90, //让你的内容页在滚动到指定的锚点时，距离页面顶部有一定空间
+        auto2top: true,//切换页面后是否自动跳转到页面顶部
         formatUpdated: '{YYYY}-{MM}-{DD}',//配置文档更新日期格式
         noEmoji: true,//禁用 emoji 解析
         nameLink: '/',//点击文档标题后跳转的链接地址
         notFoundPage: '404.md',//自定义404页面
         repo: 'luguoba/luguoba.github.io',//右上角加载Github Conor插件
         name: 'LUGUOBA BLOG',//侧边栏标题
-        loadSidebar: true, // 加载自定义侧边栏
-        autoHeader: true,//根据 _sidebar.md 的内容自动为每个页面增加标题
+        loadSidebar: true, // 加载侧边栏
+        //autoHeader: true,//根据 _sidebar.md 的内容自动为每个页面增加标题
         maxLevel: 4, // 默认情况下会抓取文档中所有标题渲染成目录，可配置最大支持渲染的标题层级
         subMaxLevel: 3, // 生成目录的最大层级
         mergeNavbar: true, // 小屏设备下合并导航栏到侧边栏
