@@ -6,6 +6,6 @@
   * [小笔记](Note/1.md)
 
 * Introduction
-  *  [README](README.md)
+  *  [README](README.md "Gouba")
   *  [DOCSIFY](https://docsify.js.org)
     
