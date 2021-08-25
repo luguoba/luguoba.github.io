@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
   <meta charset="UTF-8">
   <title>LUGUOBA'S BLOG</title>
@@ -15,7 +14,6 @@
   <!-- Font Awesome (live2d使用) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
 </head>
-
 <body>
   <div id="app">正在赶往锅巴的小岛...</div>
   <script>
@@ -35,20 +33,20 @@
       alias: { // 定义路由别名，可以更自由的定义路由规则。 支持正则
         '/.*/_sidebar.md': '/_sidebar.md'//防止意外回退
       },
-      themeable: {
-        readyTransition: true, // default
-        responsiveTables: true  // default
-      }, 
-      progress: {
-        position: "top",
-        color: "var(--theme-color,#42b983)",
-        height: "3px",
+      copyCode: {
+        buttonText: 'Copy',
+        errorText: 'Error',
+        successText: 'Copied'
       },
-      search: { 
+      search: {
         placeholder: 'SEARCH',
         noData: 'NONE',
         path: 'auto',
         depth: 3
+      },
+      themeable: {
+        readyTransition: true, // default
+        responsiveTables: true  // default
       },
       plugins: [
         function (hook, vm) {
@@ -67,12 +65,12 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <!--全文搜索-->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <!-- 阅读进度条 -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
-  <!-- 上一篇/下一篇 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <!-- 代码复制 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <!-- docsify-themeable (latest v0.x.x) -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+  <!-- 上一篇/下一篇 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <!--C代码高亮-->
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-c.js"></script>
   <!--Java代码高亮-->
@@ -101,7 +99,7 @@
   </script>
   <!-- live2d -->
   <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
   <!-- 离线阅读模式 -->
   <script>
     if (typeof navigator.serviceWorker !== 'undefined') {
@@ -109,5 +107,4 @@
     }
   </script>
 </body>
-
 </html>
