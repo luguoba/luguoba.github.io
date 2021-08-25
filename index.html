@@ -31,19 +31,19 @@
       alias: { // 定义路由别名，可以更自由的定义路由规则。 支持正则
         '/.*/_sidebar.md': '/_sidebar.md'//防止意外回退
       },
-      copyCode: {
-        buttonText: 'Copy',
-        errorText: 'Error',
-        successText: 'Copied'
+      themeable: {
+        readyTransition: true, // default
+        responsiveTables: true  // default
       },
       search: {
         placeholder: 'SEARCH',
         noData: 'NONE',
         path: 'auto',
       },
-      themeable: {
-        readyTransition: true, // default
-        responsiveTables: true  // default
+      copyCode: {
+        buttonText: 'Copy',
+        errorText: 'Error',
+        successText: 'Copied'
       },
       plugins: [
         function (hook, vm) {
