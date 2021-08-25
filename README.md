@@ -2,6 +2,8 @@
 
 **目前尚在施工...**
 
+友链: [Kevin's](https://fu-jingqi.github.io)
+
 基于[Docsify](https://docsify.js.org)
 <!--
 **This** is a ✨ _special_ ✨ `repositoryREADME.md`.
