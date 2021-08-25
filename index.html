@@ -20,7 +20,6 @@
   <div id="app">正在赶往锅巴的小岛...</div>
   <script>
     window.$docsify = {
-      autoHeader: true,
       auto2top: true,//切换页面后是否自动跳转到页面顶部
       formatUpdated: '{YYYY}-{MM}-{DD}',//配置文档更新日期格式
       noEmoji: true,//禁用 emoji 解析
@@ -45,9 +44,10 @@
         color: "var(--theme-color,#42b983)",
         height: "3px",
       },
-      search: { // default默认搜索
+      search: { 
         placeholder: 'SEARCH',
         noData: 'NONE',
+        path: 'auto',
         depth: 3
       },
       plugins: [
@@ -65,6 +65,12 @@
     };
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <!--全文搜索-->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <!-- 阅读进度条 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
+  <!-- 上一篇/下一篇 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <!-- docsify-themeable (latest v0.x.x) -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
   <!--C代码高亮-->
@@ -77,12 +83,6 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-sql.js"></script>
   <!--shell代码高亮-->
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.js"></script>
-  <!--全文搜索,直接用官方提供的无法生效-->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.js"></script>
-  <!-- 阅读进度条 -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
-  <!-- 上一篇/下一篇 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <!-- 图片缩放插件 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   <!-- Gitalk评论系统 -->
