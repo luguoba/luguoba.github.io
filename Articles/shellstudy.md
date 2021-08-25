@@ -1,4 +1,3 @@
-# DuckDuckGo
 
 ## 1 Explain how Google tracks you and we don't.
 Search secrets should remain private and away from the targeting of advertisers.
