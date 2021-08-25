@@ -1,8 +1,8 @@
 # 博客
 **目前尚在施工...**
 
-友链: [Kevin's](https://fu-jingqi.github.io)\n
-基于[Docsify](https://docsify.js.org)  [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)
+友链: [Kevin's](https://fu-jingqi.github.io)  
+基于[Docsify](https://docsify.js.org)&nbsp;&nbsp;[Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)
 <!--
 **This** is a ✨ _special_ ✨ `repositoryREADME.md`.
 
