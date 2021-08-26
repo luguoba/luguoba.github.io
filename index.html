@@ -103,6 +103,12 @@
   <!-- live2d -->
   <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
+  <!-- offline mode -->
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('/js/sw.js')
+    }
+  </script>
 </body>
 
 </html>
