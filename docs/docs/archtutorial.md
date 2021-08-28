@@ -10,12 +10,12 @@
     
 可以在Root手机上安装**DriveDroid**，该软件能在手机上创建启动盘，以备不时之需。
 
-### （建议）禁用reflector
+### 禁用reflector（建议）
 
 防止联网自动测速**源**，减少```/etc/pacman.d/mirrorlist```里的可用源
 >方法: ```systemctl disable --now reflector.service```
 
-### （建议）分区可用cfdisk，分区类型可用LVM
+### 分区可用cfdisk，分区类型可用LVM（建议）
 
 cfdisk操作方便友好，LVM方便后期需要时调整分区大小（注：建议在liveCD中操作），建议安装前查看Wiki中各方式优缺点，根据**需要**选择。
 
@@ -106,7 +106,7 @@ Enjoy ```yay``` ! **yay**使用请看ArchWiki。
         >
         >BUILDDIR=/tmp/makepkg
 
-    * （建议）缓存编译结果以供下次复用
+    * 缓存编译结果以供下次复用（建议）
 
         我觉得一般编译第三方内核时才需要。
 
