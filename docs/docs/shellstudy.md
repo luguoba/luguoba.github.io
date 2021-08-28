@@ -38,5 +38,5 @@ sleep <time>
 ### 管道
 
 ```bash
-command1 options | command2 options
+command1 <options> | command2 <options>
 ```
