@@ -6,46 +6,46 @@
 
 具体以**Wiki**为主，建议安装前先看**Wiki**的**Install Guide**，可参考[ArchLinuxlTutorial](https://archlinuxstudio.github.io/ArchLinuxTutorial/)，本文仅作补充。
 
-* 制作liveCD
+### 制作liveCD
     
-    可以在Root手机上安装**DriveDroid**，该软件能在手机上创建启动盘，以备不时之需。
+可以在Root手机上安装**DriveDroid**，该软件能在手机上创建启动盘，以备不时之需。
 
-* （建议）禁用reflector
+### （建议）禁用reflector
 
-    防止联网自动测速**源**，减少```/etc/pacman.d/mirrorlist```里的可用源
-    >方法: ```systemctl disable --now reflector.service```
+防止联网自动测速**源**，减少```/etc/pacman.d/mirrorlist```里的可用源
+>方法: ```systemctl disable --now reflector.service```
 
-* （建议）分区可用cfdisk，分区类型可用LVM
+### （建议）分区可用cfdisk，分区类型可用LVM
 
-    cfdisk操作方便友好，LVM方便后期需要时调整分区大小（注：建议在liveCD中操作），建议安装前查看Wiki中各方式优缺点，根据**需要**选择。
+cfdisk操作方便友好，LVM方便后期需要时调整分区大小（注：建议在liveCD中操作），建议安装前查看Wiki中各方式优缺点，根据**需要**选择。
 
-* iwd无法上网
+### iwd无法上网
 
-    无线链接后仍无法ping成功，可执行```dhcpcd```，会自动分配IP地址。
+无线链接后仍无法ping成功，可执行```dhcpcd```，会自动分配IP地址。
 
-* Archlinuxcn(AUR)与32位库
+### Archlinuxcn(AUR)与32位库
 
-    liveCD中： 
-    >```pacstrap```时，加上base-devel  （注： 安装AUR包时需要）
+liveCD中： 
+>```pacstrap```时，加上base-devel  （注： 安装AUR包时需要）
 
-    chroot时： 
+chroot时： 
     
-    修改```/etc/pacman.conf```
+修改```/etc/pacman.conf```
     
-    >开启32位支持： 去掉\[multilib\]一节中两行的注释
-    >
-    >开启Archlinuxcn： 在文档结尾处加入
-    >
-    >```
-    >[archlinuxcn]
-    >Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
-    >```
-    >
-    >保存后执行```pacman -Syyu```来刷新
-    >
-    >最后安装```archlinuxcn-keyring yay```
+>开启32位支持： 去掉\[multilib\]一节中两行的注释
+>
+>开启Archlinuxcn： 在文档结尾处加入
+>
+>```
+>[archlinuxcn]
+>Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
+>```
+>
+>保存后执行```pacman -Syyu```来刷新
+>
+>最后安装```archlinuxcn-keyring yay```
     
-    Enjoy ```yay``` ! **yay**使用请看ArchWiki。
+Enjoy ```yay``` ! **yay**使用请看ArchWiki。
 
 
 
